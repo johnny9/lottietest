@@ -17,9 +17,6 @@ int main(int argc, char *argv[])
     QString lottieFile;
     if (!parser.positionalArguments().isEmpty()) {
         lottieFile = parser.positionalArguments().at(0);
-    } else {
-        qWarning("No Lottie file specified. Exiting.");
-        //return -1;
     }
 
     QQmlApplicationEngine engine;
