@@ -1,9 +1,9 @@
-import QtQuick 2.3
-import QtQuick.Controls 2.15
-import QtQuick.Window 2.15
-import QtQuick.Dialogs 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Window
+import QtQuick.Dialogs
 
-import Qt.labs.lottieqt 1.0
+import Qt.labs.lottieqt
 
 Window {
     visible: true
@@ -38,7 +38,7 @@ Window {
         id: fileDialog
         title: qsTr("Please select a directory")
         onAccepted: {
-            animation.source = fileDialog.fileUrl
+            animation.source = fileDialog.currentFile
         }
     }
 }
